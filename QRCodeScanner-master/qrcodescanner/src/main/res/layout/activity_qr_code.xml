@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/qr_code_header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/Red">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_activity_scan_qr_code"
+            android:textColor="@color/qr_code_white"
+            android:textSize="18sp"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:id="@+id/qr_code_header_black_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="87dp"
+            android:layout_marginStart="87dp"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:background="@drawable/uni"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <SurfaceView
+        android:id="@+id/qr_code_preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/qr_code_header_bar"
+        android:layout_gravity="center"
+        android:visibility="visible"/>
+
+    <com.blikoon.qrcodescanner.view.QrCodeFinderView
+        android:id="@+id/qr_code_view_finder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/qr_code_header_bar"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/qr_code_ll_flash_light"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/qr_code_flashlight_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/qr_code_iv_flash_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/flashlight_turn_on"/>
+
+        <TextView
+            android:id="@+id/qr_code_tv_flash_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:text="@string/qr_code_open_flash_light"
+            android:textColor="@color/qr_code_flash_light_text_color"
+            android:textSize="@dimen/text_size_13sp"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/qr_code_view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/qr_code_header_bar"
+        android:background="@android:color/black"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:src="@drawable/comprobado"
+        android:id="@+id/guardar"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>

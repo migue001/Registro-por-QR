@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blikoon.qrcodescannerlibrary.Main2Activity"
+    android:background="@color/qr_code_white"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/fondonombre">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear"
+            android:textColor="@color/qr_code_white"
+            android:textSize="30dp"
+
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/profesor"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tool"
+        android:hint="Profesor"
+        android:textColor="@color/qr_code_finder_mask"
+        android:textColorHint="@color/qr_code_finder_mask"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/fondotexto"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:inputType="textCapCharacters"
+        />
+    <EditText
+        android:layout_below="@+id/profesor"
+        android:id="@+id/laboratorio"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="Laboratorio"
+        android:textColorHint="@color/qr_code_finder_mask"
+        android:inputType="textCapCharacters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/qr_code_finder_mask"
+        android:background="@drawable/fondotexto"
+        android:paddingLeft="10dp"
+        />
+    <Button
+        android:layout_below="@+id/laboratorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fecha"
+        android:id="@+id/fechaa"
+        android:background="@drawable/fondo_verde"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/fechaa"
+        android:layout_toEndOf="@+id/fechaa"
+        android:layout_toRightOf="@+id/fechaa"
+        android:hint="DD/MM/NN"
+        android:textColorHint="@color/qr_code_finder_mask"
+        android:id="@+id/fff"
+        android:textColor="@color/qr_code_finder_mask"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/fondotexto"
+        android:padding="10dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColorHint="@color/qr_code_finder_mask"
+        android:textColor="@color/qr_code_finder_mask"
+        android:hint="Hora de entrada"
+        android:layout_below="@+id/fff"
+        android:id="@+id/horaentrada"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/fondotexto"
+android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/horaentrada"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/horasalida"
+        android:textColorHint="@color/qr_code_finder_mask"
+        android:hint="Hora de Salida"
+        android:textColor="@color/qr_code_finder_mask"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/fondotexto"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horasalida"
+        android:text="Agregar Alumnos"
+        android:id="@+id/agregaralumnos"
+        android:background="@drawable/fondo_verde"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        />
+
+</RelativeLayout>

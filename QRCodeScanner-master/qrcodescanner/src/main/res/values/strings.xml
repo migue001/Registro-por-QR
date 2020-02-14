@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">QREscaner</string>
+
+    <string name="title_activity_scan_qr_code">Escanear</string>
+    <string name="qc_code_close">Cerrar</string>
+    <string name="qr_code_select_picture">Galerias</string>
+    <string name="qr_code_open_flash_light">Encender Linterna</string>
+    <string name="qr_code_close_flash_light">Apagar Linterna</string>
+    <string name="qr_code_auto_scan_notification">Position QR Code</string>
+    <string name="qr_code_notification">Notificacion</string>
+    <string name="qr_code_camera_not_open">No podemos acceder a la camara</string>
+    <string name="qr_code_positive_button_know">OK</string>
+    <string name="qr_code_positive_button_confirm">Confirmar</string>
+    <string name="qr_code_could_not_read_qr_code_from_picture">No podemos procesar la imagen prueba con otra</string>
+    <string name="qr_code_could_not_read_qr_code_from_scanner">No podemos abrir el contenido</string>
+    <string name="qr_code_camera_not_found">No detecta la camara</string>
+</resources>
